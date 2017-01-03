@@ -51,7 +51,6 @@
                     {% for page in pages|sort_by("time")|reverse %}
                         {% if page.meta.template == "single" %}
                             <div class="fh5co-entry padding">
-                                    <a href="{{ page.url }}" class="arrow"><i class="icon-arrow-right"></i></a>
                                     <img src="{{ page.meta.thumbnail }}" alt="post thumbnail" />
                                 <div>
                                     <span class="fh5co-post-date">{{ page.date }}</span>
