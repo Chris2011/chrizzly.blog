@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,7 +7,6 @@
         <title>{{ site_title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="{{ meta.description|striptags }}" />
-        <meta name="generator" content="Pico" />
 
         <!-- Facebook and Twitter integration -->
         <meta property="og:title" content="{{ site_title }}"/>
@@ -22,26 +22,25 @@
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <!-- Animate.css -->
-        <link rel="stylesheet" href="{{ theme_url }}/css/animate.css">
+{#        <link rel="stylesheet" href="{{ theme_url }}/css/animate.css">#}
         <!-- Icomoon Icon Fonts-->
-        <link rel="stylesheet" href="{{ theme_url }}/css/icomoon.css">
+{#        <link rel="stylesheet" href="{{ theme_url }}/css/icomoon.css">#}
 
         <!-- Theme style  -->
         <link rel="stylesheet" href="{{ theme_url }}/css/style.css">
-
     </head>
+
     <body>
-
-{#        <div class="fh5co-loader"></div>#}
-
         <div id="page">
             <div id="fh5co-aside">
                 <div class="overlay"></div>
-                <nav role="navigation">
-                    <ul>
-                        <li><a href="./"><i class="icon-home"></i></a></li>
-                    </ul>
-                </nav>
+                <div class="about-us">
+                    <div class="avatar chris"></div>
+                    <div>
+                        <h3>Christian Lenz (<a href="" class="external-links">@Chrizzly42</a>)</h3>
+                        <div><a class="external-links" href="mailto:chris@puls-webagentur.de">chris@puls-webagentur.de</a></div>
+                    </div>
+                </div>
                 <div class="featured">
                     <h2>{{ meta.bio }}</h2>
                 </div>
@@ -51,7 +50,7 @@
                     {% for page in pages|sort_by("time")|reverse %}
                         {% if page.meta.template == "single" %}
                             <div class="fh5co-entry padding">
-                                    <img src="{{ page.meta.thumbnail }}" alt="post thumbnail" />
+                                <img src="{{ page.meta.thumbnail }}" alt="post thumbnail" />
                                 <div>
                                     <span class="fh5co-post-date">{{ page.date }}</span>
                                     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>

@@ -6,7 +6,6 @@
         <title>{{ meta.title }} - {{ site_title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="{{ meta.description|striptags }}" />
-        <meta name="generator" content="Pico" />
 
         <!-- Facebook and Twitter integration -->
         <meta property="og:title" content="{{ meta.title }}"/>
@@ -22,17 +21,15 @@
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
 
         <!-- Animate.css -->
-        <link rel="stylesheet" href="{{ theme_url }}/css/animate.css">
+{#        <link rel="stylesheet" href="{{ theme_url }}/css/animate.css">#}
         <!-- Icomoon Icon Fonts-->
-        <link rel="stylesheet" href="{{ theme_url }}/css/icomoon.css">
+{#        <link rel="stylesheet" href="{{ theme_url }}/css/icomoon.css">#}
 
         <!-- Theme style  -->
         <link rel="stylesheet" href="{{ theme_url }}/css/style.css">
     </head>
+
     <body class="single">
-
-{#        <div class="fh5co-loader"></div>#}
-
         <div id="page">
             <div id="fh5co-aside" style="background-image: url({{ meta.image }})" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
@@ -92,7 +89,7 @@
         {% endif %}
         <footer>
             <div>
-                &copy; 2016 Free HTML5. All Rights Reserved. Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Developed By <a href="https://besrourms.github.io" target="_blank">Mohamed Safouan Besrour</a>
+                &copy; 2017. All Rights Reserved.
             </div>
         </footer>
 
